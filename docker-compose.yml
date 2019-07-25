@@ -3,6 +3,7 @@ services:
   verdaccio:
     image: verdaccio/verdaccio:4.x-next
     container_name: npm-local-registry
+    restart: always
     ports:
       - "4873:4873"
     volumes:
