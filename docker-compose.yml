@@ -5,7 +5,7 @@ services:
     container_name: npm-local-registry
     restart: always
     ports:
-      - "4873:4873"
+      - "80:4873"
     volumes:
       # - "./storage:/verdaccio/storage"
       - "./conf:/verdaccio/conf"
